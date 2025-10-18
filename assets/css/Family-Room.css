@@ -1,0 +1,235 @@
+:root {
+    /* colors */
+    --primary-color--: goldenrod;
+    --secondary-color--: white;
+    --Background-color--: #111;
+    --theme1--: #1d1d1d;
+
+    /* ====== fonts ======*/
+    --head-font--: "Montserrat", sans-serif;
+    --sub-head-font--: "Poppins", sans-serif;
+}
+
+
+.title-services {
+    margin-top: 5px;
+    font-family: var(--sub-head-font--);
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.service-img:hover {
+    box-shadow: 2px 2px 2px rgb(7, 7, 7) !important;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+/* Rooms Section */
+@media(max-width:992px) {
+
+ 
+    .suite-left-icon span{
+    font-size: 12px;
+}
+    /* .card-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto !important;
+    flex-wrap: nowrap;
+    padding-top: 1rem;
+
+  } */
+    .room-bg .img {
+        background-size: cover;
+        /* Maintain the same background size */
+        height: 100vh;
+        /* Keeps it centered */
+        height: 30px !important;
+        object-fit: cover;
+    }
+
+    .room-bg {
+ 
+ background-size: cover;   /* makes it responsive */
+  background-attachment: fixed; /* optional: gives parallax effect */
+  min-height: 20vh;         /* adjust height as needed */
+  width: 100%;
+}
+
+    .room-div h1 {
+        padding-top: 180px !important;
+        font-size: 25px !important;
+    }
+
+    .room-div p{
+        font-size: 15px !important;
+    }
+    .room-bg {
+        padding-bottom: 5px !important;
+    }
+
+
+    .room-div {
+    height: 20vh !important;
+    font-family: "Marcellus", serif;
+}
+
+}
+
+
+.room-bg {
+    background-image: url(../images/room/rooms-1.jpeg);
+    height: 250px;
+    background-attachment: fixed;
+}
+
+.room-div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 29vh;
+    font-family: "Marcellus", serif;
+}
+
+.room-div h1 {
+    position: relative;
+    font-weight: lighter;
+    font-size: 2.rem;
+    display: inline-block;
+    color: white;
+}
+
+/* Underline base */
+.room-div h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20%;
+    height: 2px;
+    background-color: goldenrod;
+    transform: translateX(-50%);
+}
+
+/* Keyframe for underline grow */
+@keyframes underlineGrow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Animated class */
+.room-div h1.animate::after {
+    animation: underlineGrow 1.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+    animation-fill-mode: forwards;
+    /* This keeps the line visible after animation */
+}
+
+.gold-divider {
+    color: #d4af37;
+    margin: 0 1rem;
+}
+
+.room-div p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.list a {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 17px;
+}
+
+.btn-card:hover {
+    /* background-color: black !important;
+    color: goldenrod;
+    font-weight: 800 !important;
+    transition: 1s  !important;
+    font-size: 20px !important; */
+}
+
+.btn-card {
+    font-weight: 500 !important;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tag {
+    font-family: "Poppins", sans-serif !important;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.tag:hover .icon {
+    transform: translate(4px);
+}
+
+.tag:hover::before {
+    animation: shine 2s ease-out infinite;
+}
+
+.tag::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+    animation: shine 2s ease-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.card-room {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* aniamtion
+   */
+.room {
+    overflow: hidden;
+    background-color: #111 !important;
+}
+
+.room:hover img {
+    transform: scale(1.05);
+    filter: brightness(1);
+    transition: 0.5s ease;
+}

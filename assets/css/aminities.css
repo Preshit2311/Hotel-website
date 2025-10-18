@@ -1,0 +1,272 @@
+/* ====== CSS Variables ====== */
+:root {
+  /* colors */
+  --primary-color--: goldenrod;
+  --secondary-color--: white;
+  --Background-color--: #111;
+  --theme1--: #1d1d1d;
+
+  /* ====== fonts ======*/
+  --head-font--: "Montserrat", sans-serif;
+  --sub-head-font--: "Poppins", sans-serif;
+}
+
+/* ====== Main BG Colors ====== */
+.background-color-1 {
+  background-color: var(--Background-color--);
+  height: auto;
+  padding-bottom: 50px;
+}
+
+/* ====== BG theme ====== */
+.background-color-2 {
+  background-color: var(--theme1--);
+}
+
+/* Amenities Cards Section start */
+:root {
+  --gold: #daa520;
+  --dark-1: #111111;
+  --dark-2: #1d1d1d;
+  --text-light: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.6);
+}
+
+:root {
+  /* colors */
+  --primary-color--: goldenrod;
+  --secondary-color--: white;
+  --Background-color--: #111;
+  --theme1--: #1d1d1d;
+}
+/* Dark Theme Amenities Section */
+.amenities-section {
+  background: linear-gradient(135deg, var(--dark-1) 0%, var(--dark-2) 100%);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  color: var(--text-light);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background: var(--gold);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: lineGrow 1.5s ease-out;
+}
+
+.section-title p {
+  color: var(--text-muted);
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+/* Dark Cards */
+.amenity-card {
+  background: var(--dark-2);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  height: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.amenity-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(218, 165, 32, 0.1);
+}
+
+.amenity-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Icons */
+.amenity-icon {
+  font-size: 2.8rem;
+  color: var(--gold);
+  margin-bottom: 25px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.amenity-card:hover .amenity-icon {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+/* Text */
+.amenity-title {
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.amenity-card:hover .amenity-title {
+  color: var(--gold);
+}
+
+.amenity-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Pulse Animation for Featured Amenity */
+.featured-amenity {
+  animation: pulse 2s infinite;
+  border: 1px solid var(--gold);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(218, 165, 32, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(218, 165, 32, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(218, 165, 32, 0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199.98px) {
+  .amenity-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .amenities-section {
+    padding: 60px 0;
+  }
+
+  .amenity-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .amenity-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .amenity-title {
+    font-size: 1.1rem;
+  }
+
+  .amenity-desc {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .amenities-section {
+    padding: 50px 0;
+  }
+
+  .section-title h2::after {
+    width: 50px;
+    bottom: -10px;
+  }
+
+  .amenity-card {
+    padding: 20px 15px;
+  }
+}
+/* Amenities Cards Section End */
+
+/* ====== Footer section Start ====== */
+.footer-main-heading {
+  font-family: var(--primary-font-family--);
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.footer-main-heading::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background: var(--primary-color--);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Email Subscription Box */
+.btn-warning {
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+}
+
+/* Social Icons */
+.social-icon i {
+  color: white;
+}
+
+.social-icon i:hover {
+  color: var(--primary-color--);
+}
+
+/* Footer Left */
+.footer-hover p {
+  cursor: pointer;
+}
+.footer-hover p:hover {
+  color: var(--primary-color--);
+}
+.footer-main-heading:hover {
+  color: var(--primary-color--) !important;
+}
+
+.justify-content-end p {
+  margin-top: 20px !important;
+}
+/* ====== Footer section CLose ====== */

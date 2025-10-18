@@ -1,0 +1,155 @@
+/* ====== CSS Variables ====== */
+:root {
+  /* colors */
+  --primary-color--: goldenrod;
+  --secondary-color--: white;
+  --Background-color--: #111;
+  --theme1--: #1d1d1d;
+
+  /* ====== fonts ======*/
+  --head-font--: "Montserrat", sans-serif;
+  --sub-head-font--: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+/* ====== Navbar Section Start ====== */
+@media (max-width: 997px) {
+  .box {
+    padding-bottom: 20px !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 15px;
+  }
+
+  .box-heading {
+    font-size: 25px !important;
+  }
+}
+
+.blur-navbar {
+  /* backdrop-filter: blur(3px); */
+  background-color: rgba(0, 0, 0, 0.925);
+  height: 150px;
+}
+
+/* Header Top */
+/* Top Left */
+.social-icon-header i {
+  font-size: 18px;
+  color: white;
+}
+
+.social-icon-header i:hover {
+  color: goldenrod;
+  transition: 0.4s ease;
+}
+
+/* Header Lower */
+/* Top Right */
+.top-right i {
+  color: goldenrod;
+}
+
+.top-right span {
+  color: white;
+}
+
+.top-right span:hover {
+  color: goldenrod;
+  transition: 0.4s ease;
+}
+
+/* bootstrap nav header lover main */
+/* Collapse navbar */
+
+.nav-item a:hover {
+  color: goldenrod !important;
+  transition: 0.3s ease;
+}
+
+/* Dropdown for ROOMS & SUITES */
+.dropdown-menu {
+  background-color: #1d1d1d65;
+}
+
+.dropdown-menu a {
+  color: white !important;
+}
+
+.dropdown-menu li a:hover {
+  background-color: transparent !important;
+}
+
+/* <!-- book now btn main left --> */
+.book-now-btn {
+  border: 1px solid rgba(255, 255, 255, 0.758);
+  /* background-color: goldenrod !important ; */
+  position: relative;
+  border: 1px solid white;
+}
+
+.book-now-btn:hover {
+  background-color: goldenrod !important;
+  transition: 0.3s ease-in;
+}
+
+.book-now-btn::after {
+  content: "";
+  border-bottom: 1px solid white;
+  width: 100%;
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
+}
+
+/* Hover Effect for Navbar Items */
+.nav-link {
+  position: relative;
+  padding-bottom: 5px;
+font-family: var(--sub-head-font--);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: goldenrod;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Align Dropdown Menu Items to Start */
+.dropdown-menu {
+  text-align: left !important;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* Fixes unwanted margin issues */
+}
+
+/* Fix dropdown not disappearing when moving mouse away */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+/* ====== Navbar Secti

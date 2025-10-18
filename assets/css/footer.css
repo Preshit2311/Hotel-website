@@ -1,0 +1,135 @@
+/* ====== CSS Variables ====== */
+:root {
+  /* colors */
+  --primary-color--: goldenrod;
+  --secondary-color--: white;
+  --Background-color--: #111;
+  --theme1--: #1d1d1d;
+
+  /* ====== fonts ======*/
+  --head-font--: "Montserrat", sans-serif;
+  --sub-head-font--: "Poppins", sans-serif;
+}
+
+/* ====
+/* ====== Footer section Start ====== */
+.footer-main-heading {
+    font-family: var(--primary-font-family--);
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+  
+  .footer-main-heading::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: var(--primary-color--);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* Email Subscription Box */
+  .btn-warning {
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+  }
+  
+  /* Social Icons */
+  .social-icon i {
+    color: white;
+  }
+  
+  .social-icon i:hover {
+    color: var(--primary-color--);
+  }
+  
+  /* Footer Left */
+  .footer-hover p {
+    cursor: pointer;
+  }
+  .footer-hover p:hover {
+    color: var(--primary-color--);
+  }
+  .footer-main-heading:hover {
+    color: var(--primary-color--) !important;
+  }
+  
+  .justify-content-end p {
+    margin-top: 20px !important;
+  }
+  /* ====== Footer section CLose ====== */
+  
+  /* ====== Facilities Room Section Start====== */
+  /* .divider-line {
+    height: 2px;
+    width: 30px;
+    background-color: #faa520;
+  }
+  
+  .letter-spacing-1 {
+    letter-spacing: 1px;
+  }
+  
+  .facility-card {
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(250, 165, 32, 0.2);
+    border-color: rgba(250, 165, 32, 0.3);
+  }
+  
+  .facility-img {
+    transition: all 0.5s ease;
+    height: 250px !important;
+  }
+  
+  .facility-card:hover .facility-img {
+    transform: scale(1.05);
+  }
+  
+  .facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: 100%;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .facility-hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .facility-card:hover .facility-hidden-content {
+    max-height: 100px;
+    opacity: 1;
+  }
+  
+  .arrow-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .facility-card:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+  
+  .object-fit-cover {
+    object-fit: cover;
+  } */
+  /* ====== Facilities Room Section Close ====== */
+  

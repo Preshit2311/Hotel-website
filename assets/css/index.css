@@ -1,0 +1,858 @@
+/* ====== CSS Variables ====== */
+:root {
+  /* colors */
+  --primary-color--: goldenrod;
+  --secondary-color--: white;
+  --Background-color--: #111;
+  --theme1--: #1d1d1d;
+
+  /* ====== fonts ======*/
+  --head-font--: "Montserrat", sans-serif;
+  --sub-head-font--: "Poppins", sans-serif;
+}
+
+
+
+#nav-js {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* ====== Main BG Colors ====== */
+
+ .font-spe{
+    font-family: var(--sub-head-font--);
+    font-size: 40px;
+  }
+
+.background-color-1 {
+  background-color: var(--Background-color--);
+  height: auto;
+  padding-bottom: 50px;
+}
+
+/* ====== BG theme ====== */
+.background-color-2 {
+  background-color: var(--theme1--);
+}
+
+
+.card-grid::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image:url(../images/logo-main/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+/* ====== MOBILE RESPONSIVE ADJUSTMENTS ====== */
+/* About Mansarovar right */
+@media (max-width:480px){
+    }
+
+
+
+
+@media (max-width: 976px) {
+
+  .card-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto !important;
+    flex-wrap: nowrap;
+    padding-top: 1rem;
+
+  }
+
+  .about-mansarover-right h2 {}
+
+  .about-mansarover-right p {
+    text-align: justify;
+    width: 100% !important;
+  }
+
+
+ 
+  
+  /* Event section - Adjustment */
+  @media (max-width: 992px) {
+.home-bg {
+    background-size: cover;  /* Maintain the same background size */
+    background-position: center;  /* Keeps it centered */
+    height: 10vh;
+    height: 450px !important;
+}
+
+
+.gallery-layout{
+  height: 100px;
+  
+}
+    
+    .masonry {
+ display: grid;
+  grid-auto-flow: column;               /* go left → right */
+  grid-template-rows: repeat(2, 1fr);   /* 2 rows */
+  grid-auto-columns: 500px;             /* each column width */
+  gap: 10px;
+  overflow-x: auto;                     /* horizontal scroll */
+  overflow-y: hidden;                   /* no vertical scroll */
+  height: 500px;                        /* set height */
+  padding-top: 1rem;
+
+    }
+
+
+    .event-img-container {
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 768px) {
+.navbar-toggler {
+margin-left: 50px;
+}
+
+     .blur-navbar {
+   display: none;
+ 
+}
+    .event-items {
+      margin-left: 0;
+    }
+
+    .event-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Gallery Section - mobile Adjustment */
+  @media (max-width: 768px) {
+
+
+ 
+    .masonry {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto !important;
+      flex-wrap: nowrap !important;
+      padding-top: 1rem;
+    }
+
+  }
+
+  /*Tablet Image Sizes*/
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+    .masonry {
+      display: flex;
+      grid-template-rows: repeat(2, 1fr);
+
+      gap: 10px;
+      overflow-x: auto !important;
+      flex-wrap: nowrap !important;
+      padding-top: 1rem;
+    }
+
+  }
+
+  /* Deluxe Section - Adjust width and height for small screens */
+  .delux-right-sec {
+    height: auto;
+    padding-bottom: 50px !important;
+    width: auto !important;
+    top: 0 !important;
+    right: 0 !important;
+    position: relative !important;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--primary-color--);
+  }
+
+  /* Text Alignment for Deluxe Section */
+  .delux-right-sec h5,
+  .delux-right-sec h6 {
+    text-align: center !important;
+  }
+
+  /* Deluxe List - Center on Small Screens */
+  .deluex-list {
+    margin-left: 25px !important;
+    justify-content: center !important;
+  }
+
+  /* Carousel Image Adjustments */
+  .carousel-inner img {
+    height: auto !important;
+    object-fit: cover !important;
+    margin-top: 20px !important;
+  }
+
+  /* Flex Direction for Small Screens */
+  .d-flex {
+    flex-direction: column;
+  }
+
+  /* Margin Left Reset */
+  .ms-4 {
+    margin-left: 0 !important;
+  }
+
+  /* Paragraph Style for Deluxe Section */
+  .delux-right-sec p {
+    font-size: 10px !important;
+    text-align: center !important;
+  }
+
+  /* Horizontal Line Adjustment */
+  .hr-line {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+
+  /* Footer section */
+  .footer-left-sec {
+    font-size: 18px;
+  }
+
+  /* .btn-delux{
+    
+  } */
+}
+
+/* ====== END OF MOBILE RESPONSIVE ADJUSTMENTS ====== */
+
+
+@media(max-width:480px){
+  .blur-navbar {
+   display: none;
+ 
+}
+}
+
+/* ====== Navbar Section Start ====== */
+@media (max-width: 997px) {
+  .box {
+    padding-bottom: 20px !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 15px;
+  }
+
+  .box-heading {
+    font-size: 25px !important;
+  }
+}
+
+.blur-navbar {
+  /* backdrop-filter: blur(3px); */
+  background-color: rgba(0, 0, 0, 0.925);
+  height: 150px;
+ 
+}
+
+/* Header Top */
+/* Top Left */
+.social-icon-header i {
+  font-size: 18px;
+  color: white;
+}
+
+.social-icon-header i:hover {
+  color: goldenrod;
+  transition: 0.4s ease;
+}
+
+/* Header Lower */
+/* Top Right */
+.top-right i {
+  color: goldenrod;
+}
+
+.top-right span {
+  color: white;
+}
+
+.top-right span:hover {
+  color: goldenrod;
+  transition: 0.4s ease;
+}
+
+/* bootstrap nav header lover main */
+/* Collapse navbar */
+
+.nav-item a:hover {
+  color: goldenrod !important;
+  transition: 0.3s ease;
+}
+
+/* Dropdown for ROOMS & SUITES */
+.dropdown-menu {
+  background-color: #1d1d1d65;
+}
+
+.dropdown-menu a {
+  color: white !important;
+}
+
+.dropdown-menu li a:hover {
+  background-color: transparent !important;
+}
+
+/* <!-- book now btn main left --> */
+.book-now-btn {
+  border: 1px solid rgba(255, 255, 255, 0.758);
+  /* background-color: goldenrod !important ; */
+  position: relative;
+  border: 1px solid white;
+}
+
+.book-now-btn:hover {
+  background-color: goldenrod !important;
+  transition: 0.3s ease-in;
+}
+
+.book-now-btn::after {
+  content: "";
+  border-bottom: 1px solid white;
+  width: 100%;
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
+}
+
+/* Hover Effect for Navbar Items */
+.nav-link {
+  position: relative;
+  padding-bottom: 5px;
+font-family: var(--sub-head-font--);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: goldenrod;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Align Dropdown Menu Items to Start */
+.dropdown-menu {
+  text-align: left !important;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* Fixes unwanted margin issues */
+}
+
+/* Fix dropdown not disappearing when moving mouse away */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+/* ====== Navbar Section Close ====== */
+
+/* ====== Hero Home Section Start ====== */
+
+.home-bg {
+  height: 700px;
+  background-image: url(../images/home/omar-rodriguez-XYuNwlYtfLI-unsplash.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100% !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.box {
+  background-color: rgba(73, 49, 0, 0.279);
+  border-radius: 10px;
+  height: auto;
+  padding: 30px;
+  border: 1px solid rgba(218, 165, 32, 0.763);
+}
+
+.box-heading {
+  font-size: 100px;
+ font-family: "Afacad", sans-serif;    font-weight:300;
+}
+
+/* ====== Hero Home Section Close ====== */
+
+/* ====== About Mansarovar Section Start ====== */
+
+/* About Mansarovar left */
+/* Layer 1 Image */
+.layer1-image img:hover {
+  border: 1px solid var(--primary-color--);
+}
+
+.shape {
+  height: 200px;
+  width: 10%;
+  background-color: #1d1d1d;
+  border-radius: 60px 0px 0px;
+  bottom: -3.2%;
+  right: 15%;
+  border-left: 5px solid var(--primary-color--);
+}
+
+.border-shape {
+  height: 500px;
+  width: 55%;
+  border: 1px solid var(--primary-color--);
+  top: 10%;
+  left: 5%;
+}
+
+.border-shape:hover {
+  border: 1px solid whitesmoke;
+}
+
+/* About Mansarovar right */
+.about-mansarover-right h5 {
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.about-mansarover-right {
+  font-family: var(--primary-font-family--);
+}
+
+.about-mansarover-right h2 {
+  font-family: var(--sub-head-font--);
+}
+
+/* About check list */
+.about-check-list i {
+  color: var(--primary-color--);
+}
+
+.about-us-btn {
+  border: 1px solid white;
+  background-color: var(--primary-color--);
+  position: relative;
+}
+
+.about-us-btn:hover {
+  background-color: var(--primary-color--) !important;
+  transition: 0.5s ease-in;
+}
+
+.about-us-btn::after {
+  content: "";
+  border-bottom: 1px solid white;
+  width: 100%;
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
+}
+
+/* ====== About Mansarovar Section Close ====== */
+
+/* ====== Service Card Section Start ====== */
+
+/* Service Card Heading Style */
+.service-card {
+  color: #cba36b;
+  border: none;
+  background-color: transparent;
+  width: 100% !important;
+  /* Takes full width on smaller screens */
+  max-width: 18rem !important;
+  /* Keeps max width for larger screens */
+  height: 395px !important;
+  margin-left: auto;
+  /* Center cards */
+  margin-right: auto;
+}
+
+/* Icon Positioning */
+.card-icon {
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+
+/* Card Hover Effect */
+.card:hover i {
+  color: white;
+}
+
+.hero-btn {
+  border: 2px solid #cba36b;
+  color: var(--secondary-color--);
+}
+
+/* ====== Service Card Section Close ====== */
+
+/* ====== Mansarovar Event Section start ====== */
+.section-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.event-card {
+  /* background: var(--color-bg-light); */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+}
+
+.event-card:hover {
+  /* transform: translateY(-10px); */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event-img-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-img {
+  transform: scale(1.02);
+}
+
+.event-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.event-card:hover .event-overlay {
+  opacity: 1;
+}
+
+.event-content {
+  text-align: center;
+  padding: 15px;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-content {
+  transform: translateY(0);
+}
+
+.event-title {
+  color: var(--secondary-color--);
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  color: var(--secondary-color--);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.event-footer {
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color--);
+}
+
+.event-footer i {
+  color: var(--primary-color--);
+}
+
+/* EVENT-ENHANCED SCALING EFFECT */
+
+.event-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  /* Combined lift + scale */
+  box-shadow: 0 10px 10px rgba(218, 165, 32, 0.2);
+}
+
+.event-img-container {
+  transform-origin: center center;
+  /* Better image scaling */
+}
+
+.event-card:hover .event-img {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+/* ====== Mansarovar Event Section Close ====== */
+
+/* ====== Mansarovar Gallery Section Start ====== */
+/* -- gallery layout -- */
+.gallery-layout {
+  display: flex;
+  justify-content: center;
+  margin: 50;
+  background-color: var(--theme1--);
+}
+
+/*Image Sizes are Determined by the Column width*/
+.masonry {
+  columns: 300px;
+  /*YOU ONLY NEED THIS LINE OF CODE TO MAKE THIS IMAGE CONTAINER TO A MASONRY-LAYOUT*/
+  margin: 20px;
+  /* for grid asspect row columns*/
+}
+
+.masonry img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.masonry img:hover {
+  transform: scale(0.98);
+  transition: 0.4s ease-out;
+  border: 0.5px solid whitesmoke;
+}
+
+/* ====== Mansarovar Gallery Section Close ====== */
+
+/* ====== Delux Room Section Start ====== */
+/* Deluxe Right Section Styles */
+/* Delux Left Section */
+
+.delux-slider {
+  /* overflow: hidden !important; */
+}
+
+.delux-slider img:hover {
+  transform: scale(1.06);
+  transition: 1s;
+}
+
+.delux-right-sec {
+  background-color: var(--theme1--);
+  height: auto;
+  width: 60%;
+  top: 10%;
+  right: -5%;
+  z-index: 1;
+}
+
+/* Deluxe H6 Style */
+.delux-h6 {
+  color: var(--primary-color--);
+}
+
+/* Deluxe Icon Style */
+.delux-icon {
+  margin-top: 6px;
+  color: var(--primary-color--);
+}
+
+/* Carousel Item Transition */
+.carousel-item {
+  transition: transform 0.1s;
+}
+
+/* ===== CAROUSEL SECTION =====*/
+
+/* .row > * {
+  padding-left: 0px !important; {
+} */
+.deluxe-row-center {
+  padding-left: 0px !important;
+}
+
+.row-delux {
+  margin-left: auto;
+  /* Center cards */
+  margin-right: auto;
+  padding-left: 21px;
+}
+
+/* ====== Delux Room Section Close ====== */
+
+/* ====== Our Specialities Section Start ====== */
+.specialities-card {
+  overflow: hidden;
+}
+
+.specialities-card:hover img {
+  transform: scale(1.05);
+  transition: .4s;
+}
+
+/* ====== Our Specialities Section Close ====== */
+
+/* ====== Footer section Start ====== */
+.footer-main-heading {
+  font-family: var(--primary-font-family--);
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.footer-main-heading::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background: var(--primary-color--);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Email Subscription Box */
+.btn-warning {
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+}
+
+/* Social Icons */
+.social-icon i {
+  color: white;
+}
+
+.social-icon i:hover {
+  color: var(--primary-color--);
+}
+
+/* Footer Left */
+.footer-hover p {
+  cursor: pointer;
+}
+
+.footer-hover p:hover {
+  color: var(--primary-color--);
+}
+
+.footer-main-heading:hover {
+  color: var(--primary-color--) !important;
+}
+
+.justify-content-end p {
+  margin-top: 20px !important;
+}
+
+/* ====== Footer section CLose ====== */
+
+/* ====== Facilities Room Section Start====== */
+.divider-line {
+  height: 2px;
+  width: 30px;
+  background-color: #faa520;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.facility-card {
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(250, 165, 32, 0.2);
+  border-color: rgba(250, 165, 32, 0.3);
+}
+
+.facility-img {
+  transition: all 0.5s ease;
+  height: 250px !important;
+}
+
+.facility-card:hover .facility-img {
+  transform: scale(1.05);
+}
+
+.facility-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%);
+  height: 100%;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.facility-hidden-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.facility-card:hover .facility-hidden-content {
+  max-height: 100px;
+  opacity: 1;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* ====== Facilities Room Section Close ====== */
